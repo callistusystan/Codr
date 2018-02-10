@@ -1,6 +1,6 @@
 {
   "name": "codr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A node program to extract codeforces inputs and outputs",
   "main": "./lib/codr.js",
   "repository": {
