@@ -1,0 +1,36 @@
+{
+  "name": "codr",
+  "version": "0.0.1",
+  "description": "A node program to extract codeforces inputs and outputs",
+  "main": "./lib/codr.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callistusystan/codr"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Callistus Tan",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "cheerio": "^1.0.0-rc.2",
+    "fs-extra": "^4.0.2",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0"
+  },
+  "bin": {
+    "codr": "bin/index.js"
+  },
+  "preferGlobal": "true",
+  "devDependencies": {},
+  "keywords": [
+    "competitive programming",
+    "codeforces",
+    "hackerrank",
+    "parser",
+    "extract",
+    "input",
+    "output"
+  ]
+}

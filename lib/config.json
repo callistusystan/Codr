@@ -1,0 +1,4 @@
+{
+  "template": "default_template.cpp",
+  "runscript": "default_runscript.sh"
+}

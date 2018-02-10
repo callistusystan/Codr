@@ -1,0 +1,36 @@
+usage: codr [-h | --help]
+            [<directory> <URL>]
+            [-t | --template <templateFilePath>]
+            [-r | --runscript <runScriptPath>]
+
+actions:
+  -h, --help          shows this help message and exit
+
+  <directory> <URL>   extracts the input, outputs of problem(s) in the URL
+                      and sets up a new folder for the problem(s) in the
+                      specified directory
+
+                      example: codr . http://codeforces.com/problemset/problem/1/A
+                      example: codr . https://www.hackerrank.com/contests/projecteuler/challenges/euler001
+
+                      NOTE: URL must be a publicly accessible link to a problem
+
+  -t, --template      sets the specified template file that will be generated when extracting problem data
+                      the template file may be reset to default by specifying "default".
+
+                      example: codr -t ./template.py
+                      example: codr -t default
+
+                      NOTE: templateFile must be a valid path to an existing file
+                      NOTE: may require "sudo su"
+
+  -r, --runscript     sets the specified runscript that will be generated when extracting problem data.
+                      the runscript may be reset to default by specifying "default".
+                      the runscript can be disabled by specifying "off".
+
+                      example: codr -r ./test.sh
+                      example: codr -r default
+                      example: codr -r off
+
+                      NOTE: templateFile must be a valid path to an existing file
+                      NOTE: may require "sudo su"
