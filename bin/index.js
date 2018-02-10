@@ -44,7 +44,8 @@ const main = () => {
 
     // parse args
     const [directory, URL] = argv._;
-    if (!directory || !URL) return console.log(ERRORS.NO_EXTRACT_ARGUMENTS);
+    if (!directory) return console.log(ERRORS.NO_EXTRACT_ARGUMENTS);
+    if (!URL) return codr.extract(directory, "none")
     try {
       codr.extract(directory, URL);
     } catch (e) {

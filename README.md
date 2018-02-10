@@ -6,7 +6,7 @@ It accepts a URL to a coding problem (on a listed platform), and sets up a folde
 
 Codr currently works for the following:
 1. [Codeforces](http://www.codeforces.com)
-2. [HackerRank](https://www.hackerrank.com)
+2. [HackerRank](https://www.hackerrank.com) (Work in progress)
 
 NOTE: To use the default test script, the C++ executable should be named "sol" (g++ -std=c++14 <code.cpp> -o sol)
 
@@ -46,16 +46,18 @@ usage: codr [-h | --help]
             [-r | --runscript <runScriptPath>]
 
 actions:
-  -h, --help          shows this help message and exit
+  -h, --help          shows this help message and exit.
 
   <directory> <URL>   extracts the input, outputs of problem(s) in the URL
                       and sets up a new folder for the problem(s) in the
-                      specified directory
+                      specified directory.
+                      can also create a program folder by omitting URL.
 
                       example: codr . http://codeforces.com/problemset/problem/1/A
                       example: codr . https://www.hackerrank.com/contests/projecteuler/challenges/euler001
+                      example: codr .
 
-                      NOTE: URL must be a publicly accessible link to a problem
+                      NOTE: URL must be a publicly accessible link to a problem.
 
   -t, --template      sets the specified template file that will be generated when extracting problem data
                       the template file may be reset to default by specifying "default".
@@ -63,8 +65,8 @@ actions:
                       example: codr -t ./template.py
                       example: codr -t default
 
-                      NOTE: templateFile must be a valid path to an existing file
-                      NOTE: may require "sudo su"
+                      NOTE: templateFile must be a valid path to an existing file.
+                      NOTE: may require "sudo su".
 
   -r, --runscript     sets the specified runscript that will be generated when extracting problem data.
                       the runscript may be reset to default by specifying "default".
@@ -74,8 +76,8 @@ actions:
                       example: codr -r default
                       example: codr -r off
 
-                      NOTE: templateFile must be a valid path to an existing file
-                      NOTE: may require "sudo su"
+                      NOTE: templateFile must be a valid path to an existing file.
+                      NOTE: may require "sudo su".
 ```
 
 ## Useful Documentation ##
