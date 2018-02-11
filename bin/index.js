@@ -10,7 +10,7 @@ const main = () => {
 
     // show help file
     fs.readFile(
-      '../lib/help',
+      './help',
       { encoding: 'utf8' },
       (err, text) => {
         console.log(text);
