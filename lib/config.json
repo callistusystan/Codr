@@ -1,4 +1,4 @@
 {
-  "template": "default_template.cpp",
-  "runscript": "default_runscript.sh"
+  "template": "codr_default_template.cpp",
+  "runscript": "codr_default_runscript.sh"
 }
