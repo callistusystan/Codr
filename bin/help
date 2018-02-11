@@ -9,13 +9,14 @@ actions:
   <directory> <URL>   extracts the input, outputs of problem(s) in the URL
                       and sets up a new folder for the problem(s) in the
                       specified directory.
-                      can also create a program folder by omitting URL.
+                      can also set up a new folder on the go by specifying a non-URL.
 
                       example: codr . http://codeforces.com/problemset/problem/1/A
                       example: codr . https://www.hackerrank.com/contests/projecteuler/challenges/euler001
+                      example: codr . myprogram
                       example: codr .
 
-                      NOTE: URL must be a publicly accessible link to a problem.
+                      NOTE: URL links must be publicly accessible link.
 
   -t, --template      sets the specified template file that will be generated when extracting problem data
                       the template file may be reset to default by specifying "default".
